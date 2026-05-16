@@ -1,0 +1,1 @@
+g++ ./project/*.cpp -L/usr/local/lib -L/usr/lib -lsqlite3 -ljson -ldrogon -lcurl -g -o redarc
