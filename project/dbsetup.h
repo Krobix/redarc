@@ -5,10 +5,15 @@
 
 namespace DbSetup {
     sqlite3 *db;
+    std::string dir;
 
     int createdb();
 
-    int opendb(const std::string &path);
+    int opendb(std::string path);
 
-    int insdata(std::istream &in, const bool local_images);
+    int inssubmission(std::istream &in, const bool local_image);
+
+    std::string insmedia(const std::string& link, bool local);
+
+    int insreply(std::istream &in);
 }
